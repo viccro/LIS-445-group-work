@@ -1,4 +1,4 @@
-#Outstanding questions for PREMIS 
+# Outstanding questions for PREMIS 
 
 * What are links supposed to look like?
 * formatRegistry??
