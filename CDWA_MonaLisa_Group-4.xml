@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDWA:cdwalite xmlns:CDWA="http://www.getty.edu/CDWA/CDWALite"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.getty.edu/CDWA/CDWALite http://www.getty.edu/CDWA/CDWALite/CDWALite-xsd-public-v1-1.xsd">
+    <CDWA:descriptiveMetadata>
+        <CDWA:objectWorkTypeWrap>
+            <CDWA:objectWorkType CDWA:termsource="AAT" CDWA:termsourceID="300189808">figures (representations)</CDWA:objectWorkType>
+            <CDWA:objectWorkType CDWA:termsource="AAT" CDWA:termsourceID="300047469">half figures</CDWA:objectWorkType>
+            <CDWA:objectWorkType CDWA:termsource="AAT" CDWA:termsourceID="300033656">panel paintings (paintings by form)</CDWA:objectWorkType>
+            <CDWA:objectWorkType CDWA:termsource="AAT" CDWA:termsourceID="300033799">oil paintings (visual works)</CDWA:objectWorkType>
+        </CDWA:objectWorkTypeWrap>
+        
+        <CDWA:titleWrap>
+            <CDWA:titleSet>
+                <CDWA:title>Mona Lisa</CDWA:title>
+                <CDWA:sourceTitle>Musée du Louvre (Paris, France)</CDWA:sourceTitle>
+            </CDWA:titleSet>
+            <CDWA:titleSet>
+                <CDWA:title>La Joconde</CDWA:title>
+                <CDWA:sourceTitle>Musée du Louvre (Paris, France)</CDWA:sourceTitle>
+            </CDWA:titleSet>
+            <CDWA:titleSet>
+                <CDWA:title>La Gioconda</CDWA:title>
+                <CDWA:sourceTitle>Musée du Louvre (Paris, France)</CDWA:sourceTitle>
+            </CDWA:titleSet>
+        </CDWA:titleWrap>
+        
+        <CDWA:displayCreator>Leonardo, da Vinci, 1452-1519</CDWA:displayCreator>
+        <CDWA:indexingCreatorWrap>
+            <CDWA:indexingCreatorSet>
+                <CDWA:nameCreatorSet>
+                    <CDWA:nameCreator CDWA:termsource="LOC" CDWA:termsourceID="79034525">Leonardo, da Vinci, 1452-1519</CDWA:nameCreator>
+                    <CDWA:sourceNameCreator></CDWA:sourceNameCreator>
+                </CDWA:nameCreatorSet>
+                <CDWA:nationalityCreator>Italian</CDWA:nationalityCreator>
+                <CDWA:vitalDatesCreator CDWA:birthDate="1452" CDWA:deathDate="1519">1452-1519</CDWA:vitalDatesCreator>
+                <CDWA:genderCreator>male</CDWA:genderCreator>
+                <CDWA:roleCreator CDWA:termsource="AAT" CDWA:termsourceID="300435154">Portrait painter</CDWA:roleCreator>
+            </CDWA:indexingCreatorSet>
+        </CDWA:indexingCreatorWrap>
+        
+        <CDWA:displayMeasurements>0.77m x 0.53m</CDWA:displayMeasurements>
+        <CDWA:indexingMeasurementsWrap>
+            <CDWA:indexingMeasurementsSet>
+                <CDWA:measurementsSet CDWA:value="0.77" CDWA:type="height" CDWA:unit="m"/>
+            </CDWA:indexingMeasurementsSet>
+            <CDWA:indexingMeasurementsSet>
+                <CDWA:measurementsSet CDWA:value="0.53" CDWA:type="width" CDWA:unit="m"/>
+            </CDWA:indexingMeasurementsSet>
+        </CDWA:indexingMeasurementsWrap>
+        <CDWA:displayMaterialsTech>oil on poplar panel</CDWA:displayMaterialsTech>
+        <CDWA:indexingMaterialsTechWrap>
+            <CDWA:indexingMaterialsTechSet>
+                <CDWA:termMaterialsTech CDWA:termsource="AAT">poplar (wood)</CDWA:termMaterialsTech>
+                <CDWA:termMaterialsTech CDWA:termsource="AAT">oil paint (paint)</CDWA:termMaterialsTech>
+            </CDWA:indexingMaterialsTechSet>
+        </CDWA:indexingMaterialsTechWrap>
+        <CDWA:styleWrap>
+            <CDWA:style CDWA:termsource="AAT" CDWA:termsourceID="300021140">Renaissance</CDWA:style>
+        </CDWA:styleWrap>
+        <CDWA:cultureWrap>
+            <CDWA:culture CDWA:termsourceID="AAT" CDWA:termsource="300111198">Italian (culture or style)</CDWA:culture>
+        </CDWA:cultureWrap>
+        <CDWA:displayCreationDate>circa 1503-1506, perhaps 1517</CDWA:displayCreationDate>
+        <CDWA:indexingDatesWrap>
+            <CDWA:indexingDatesSet>
+                <CDWA:dateQualifier>creation</CDWA:dateQualifier>
+                <CDWA:earliestDate>1503</CDWA:earliestDate>
+                <CDWA:latestDate>1517</CDWA:latestDate>
+            </CDWA:indexingDatesSet>
+        </CDWA:indexingDatesWrap>
+        <CDWA:locationWrap>
+            <CDWA:locationSet>
+                <CDWA:locationName CDWA:locID="80020283" CDWA:locIDtype="NAF">Musée du Louvre</CDWA:locationName>
+                <CDWA:workID></CDWA:workID>
+            </CDWA:locationSet>
+        </CDWA:locationWrap>
+        <CDWA:indexingSubjectWrap>
+            <CDWA:indexingSubjectSet>
+                <CDWA:extentSubject></CDWA:extentSubject>
+                <CDWA:subjectTerm></CDWA:subjectTerm>
+            </CDWA:indexingSubjectSet>
+        </CDWA:indexingSubjectWrap>
+        <CDWA:classWrap>
+            <CDWA:classification></CDWA:classification>
+        </CDWA:classWrap>
+        <CDWA:descriptiveNoteWrap>
+            <CDWA:descriptiveNoteSet>
+                <CDWA:descriptiveNote></CDWA:descriptiveNote>
+                <CDWA:sourceDescriptiveNote></CDWA:sourceDescriptiveNote>
+            </CDWA:descriptiveNoteSet>
+        </CDWA:descriptiveNoteWrap>
+        <CDWA:inscriptionsWrap>
+            <CDWA:inscriptions></CDWA:inscriptions>
+        </CDWA:inscriptionsWrap>
+        <CDWA:relatedWorksWrap>
+            <CDWA:relatedWorkSet>
+                <CDWA:linkRelatedWork></CDWA:linkRelatedWork>
+                <CDWA:relatedWorkRelType></CDWA:relatedWorkRelType>
+                <CDWA:labelRelatedWork></CDWA:labelRelatedWork>
+                <CDWA:locRelatedWork></CDWA:locRelatedWork>
+            </CDWA:relatedWorkSet>
+        </CDWA:relatedWorksWrap>
+    </CDWA:descriptiveMetadata>
+    <CDWA:administrativeMetadata>
+        <CDWA:rightsWork></CDWA:rightsWork>
+        <CDWA:recordWrap>
+            <CDWA:recordID></CDWA:recordID>
+            <CDWA:recordType></CDWA:recordType>
+            <CDWA:recordSource></CDWA:recordSource>
+            <CDWA:recordInfoWrap>
+                <CDWA:recordInfoID></CDWA:recordInfoID>
+                <CDWA:recordInfoLink></CDWA:recordInfoLink>
+                <CDWA:recordRelID></CDWA:recordRelID>
+                <CDWA:recordMetadataLoc></CDWA:recordMetadataLoc>
+                <CDWA:recordMetadataDate></CDWA:recordMetadataDate>
+            </CDWA:recordInfoWrap>
+        </CDWA:recordWrap>
+        <CDWA:resourceWrap>
+            <CDWA:resourceSet>
+                <CDWA:linkResource></CDWA:linkResource>
+                <CDWA:resourceID></CDWA:resourceID>
+                <CDWA:resourceRelType></CDWA:resourceRelType>
+                <CDWA:resourceType></CDWA:resourceType>
+                <CDWA:rightsResource></CDWA:rightsResource>
+                <CDWA:resourceViewDescription></CDWA:resourceViewDescription>
+                <CDWA:resourceViewType></CDWA:resourceViewType>
+                <CDWA:resourceViewSubjectTerm></CDWA:resourceViewSubjectTerm>
+                <CDWA:resourceViewDate></CDWA:resourceViewDate>
+                <CDWA:resourceSource></CDWA:resourceSource>
+                <CDWA:linkRelatedResource>
+                    <CDWA:relatedResourceRelType></CDWA:relatedResourceRelType>
+                    <CDWA:labelRelatedResource></CDWA:labelRelatedResource>
+                </CDWA:linkRelatedResource>
+                <CDWA:resourceMetadataLoc></CDWA:resourceMetadataLoc>
+            </CDWA:resourceSet>
+        </CDWA:resourceWrap>
+    </CDWA:administrativeMetadata>
+</CDWA:cdwalite>

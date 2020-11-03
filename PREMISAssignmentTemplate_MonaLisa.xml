@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PREMIS:premis xmlns:PREMIS="http://www.loc.gov/premis/v3"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://www.loc.gov/standards/premis/premis.xsd" version="">
+    <PREMIS:object xsi:type="PREMIS:intellectualEntity">
+            <PREMIS:objectIdentifier>
+                <PREMIS:objectIdentifierType>local</PREMIS:objectIdentifierType>
+                <PREMIS:objectIdentifierValue>idea of Mona Lisa</PREMIS:objectIdentifierValue>
+            </PREMIS:objectIdentifier>
+        <PREMIS:relationship>
+            <PREMIS:relationshipType></PREMIS:relationshipType>
+            <PREMIS:relationshipSubType></PREMIS:relationshipSubType>
+            <PREMIS:relatedObjectIdentifier>
+                <PREMIS:relatedObjectIdentifierType></PREMIS:relatedObjectIdentifierType>
+                <PREMIS:relatedObjectIdentifierValue></PREMIS:relatedObjectIdentifierValue>
+            </PREMIS:relatedObjectIdentifier>
+        </PREMIS:relationship>
+        <!-- You need to add enough optional elements to indicated that this is the FRBR Work for the idea of the Mona Lisa -->
+    </PREMIS:object>
+    
+    <PREMIS:object xsi:type="PREMIS:representation">
+        <PREMIS:objectIdentifier>
+            <PREMIS:objectIdentifierType></PREMIS:objectIdentifierType>
+            <PREMIS:objectIdentifierValue></PREMIS:objectIdentifierValue>
+        </PREMIS:objectIdentifier>
+        <!-- You need to add enough optional elements to indicate that this is the physical painting -->
+    </PREMIS:object>
+    
+    <PREMIS:object xsi:type="PREMIS:file">
+        <PREMIS:objectIdentifier>
+            <PREMIS:objectIdentifierType></PREMIS:objectIdentifierType>
+            <PREMIS:objectIdentifierValue></PREMIS:objectIdentifierValue>
+        </PREMIS:objectIdentifier>
+        <PREMIS:objectCharacteristics>
+            <PREMIS:fixity>
+                <PREMIS:messageDigestAlgorithm></PREMIS:messageDigestAlgorithm>
+                <PREMIS:messageDigest></PREMIS:messageDigest>
+            </PREMIS:fixity>
+            <PREMIS:size></PREMIS:size>
+            <PREMIS:format>
+                <PREMIS:formatDesignation>
+                    <PREMIS:formatName></PREMIS:formatName>
+                </PREMIS:formatDesignation>
+                <PREMIS:formatRegistry>
+                    <PREMIS:formatRegistryName></PREMIS:formatRegistryName>
+                    <PREMIS:formatRegistryKey></PREMIS:formatRegistryKey>
+                </PREMIS:formatRegistry>
+            </PREMIS:format>
+        </PREMIS:objectCharacteristics>
+        <!-- You need to add enough metadata values and optional elements to indicate that this is the digital image of the painting -->
+    </PREMIS:object>
+    
+    <PREMIS:object xsi:type="PREMIS:intellectualEntity">
+        <PREMIS:objectIdentifier>
+            <PREMIS:objectIdentifierType></PREMIS:objectIdentifierType>
+            <PREMIS:objectIdentifierValue></PREMIS:objectIdentifierValue>
+        </PREMIS:objectIdentifier>
+        <!-- You need to add enough optional elements to indicate that this is the hardware used to render your digital image -->
+    </PREMIS:object>
+    
+    <PREMIS:object xsi:type="PREMIS:intellectualEntity">
+        <PREMIS:objectIdentifier>
+            <PREMIS:objectIdentifierType></PREMIS:objectIdentifierType>
+            <PREMIS:objectIdentifierValue></PREMIS:objectIdentifierValue>
+        </PREMIS:objectIdentifier>
+        <!-- You need to add enough optional elements to indicate that this is the operating system your hardware uses -->
+    </PREMIS:object>
+    
+    <PREMIS:object xsi:type="PREMIS:intellectualEntity">
+        <PREMIS:objectIdentifier>
+            <PREMIS:objectIdentifierType>local</PREMIS:objectIdentifierType>
+            <PREMIS:objectIdentifierValue></PREMIS:objectIdentifierValue>
+        </PREMIS:objectIdentifier>
+        <!-- You need to add enough optional elements to indicate that this is the software used to view the image file -->
+    </PREMIS:object>
+    
+    <PREMIS:event>
+        <PREMIS:eventIdentifier>
+            <PREMIS:eventIdentifierType></PREMIS:eventIdentifierType>
+            <PREMIS:eventIdentifierValue></PREMIS:eventIdentifierValue>
+        </PREMIS:eventIdentifier>
+        <PREMIS:eventType></PREMIS:eventType>
+        <PREMIS:eventDateTime></PREMIS:eventDateTime>
+        <PREMIS:eventOutcomeInformation></PREMIS:eventOutcomeInformation>
+        <PREMIS:linkingAgentIdentifier>
+            <PREMIS:linkingAgentIdentifierType></PREMIS:linkingAgentIdentifierType>
+            <PREMIS:linkingAgentIdentifierValue></PREMIS:linkingAgentIdentifierValue>
+            <PREMIS:linkingAgentRole></PREMIS:linkingAgentRole>
+        </PREMIS:linkingAgentIdentifier>
+        <PREMIS:linkingObjectIdentifier>
+            <PREMIS:linkingObjectIdentifierType></PREMIS:linkingObjectIdentifierType>
+            <PREMIS:linkingObjectIdentifierValue></PREMIS:linkingObjectIdentifierValue>
+            <PREMIS:linkingObjectRole></PREMIS:linkingObjectRole>
+        </PREMIS:linkingObjectIdentifier>
+        <!-- You need to add enough metadata values and optional elements to indicate the creation of the digital image -->
+    </PREMIS:event>
+    
+    <PREMIS:event>
+        <PREMIS:eventIdentifier>
+            <PREMIS:eventIdentifierType></PREMIS:eventIdentifierType>
+            <PREMIS:eventIdentifierValue></PREMIS:eventIdentifierValue>
+        </PREMIS:eventIdentifier>
+        <PREMIS:eventType></PREMIS:eventType>
+        <PREMIS:eventDateTime></PREMIS:eventDateTime>
+        <!-- You need to add enough metadata values and optional elements to indicate that this is the checksum process for the image file -->
+    </PREMIS:event>
+    
+    <PREMIS:agent>
+        <PREMIS:agentIdentifier>
+            <PREMIS:agentIdentifierType></PREMIS:agentIdentifierType>
+            <PREMIS:agentIdentifierValue></PREMIS:agentIdentifierValue>
+        </PREMIS:agentIdentifier>
+        <!-- You need to add enough metadata values and optional elements to indicate the checksum process agent -->
+    </PREMIS:agent>
+    
+    <PREMIS:agent>
+        <PREMIS:agentIdentifier>
+            <PREMIS:agentIdentifierType></PREMIS:agentIdentifierType>
+            <PREMIS:agentIdentifierValue></PREMIS:agentIdentifierValue>
+        </PREMIS:agentIdentifier>
+        <!-- You need to add enough metadata values and optional elements to indicate the rights holder for the image file -->
+    </PREMIS:agent>
+    
+    <PREMIS:agent>
+        <PREMIS:agentIdentifier>
+            <PREMIS:agentIdentifierType></PREMIS:agentIdentifierType>
+            <PREMIS:agentIdentifierValue></PREMIS:agentIdentifierValue>
+        </PREMIS:agentIdentifier>
+        <!-- You need to add enough metadata values and optional elements to indicate the rights holder for your operating system -->
+    </PREMIS:agent>
+    
+    <!-- You may need to add additional agents related to your software choices and or your checksum process -->
+  
+    <PREMIS:rights>
+        <PREMIS:rightsStatement>
+            <PREMIS:rightsStatementIdentifier>
+                <PREMIS:rightsStatementIdentifierType></PREMIS:rightsStatementIdentifierType>
+                <PREMIS:rightsStatementIdentifierValue></PREMIS:rightsStatementIdentifierValue>
+            </PREMIS:rightsStatementIdentifier>
+            <PREMIS:rightsBasis></PREMIS:rightsBasis>
+        </PREMIS:rightsStatement>
+        <!-- You need to add enough information to adequately describe the rights situation as it relates to administrative actions for the image file -->
+    </PREMIS:rights>
+    
+    <PREMIS:rights>
+        <PREMIS:rightsStatement>
+            <PREMIS:rightsStatementIdentifier>
+                <PREMIS:rightsStatementIdentifierType></PREMIS:rightsStatementIdentifierType>
+                <PREMIS:rightsStatementIdentifierValue></PREMIS:rightsStatementIdentifierValue>
+            </PREMIS:rightsStatementIdentifier>
+            <PREMIS:rightsBasis></PREMIS:rightsBasis>
+        </PREMIS:rightsStatement>
+        <!-- You need to add enough information to adequately describe the rights situation as it relates to administrative actions for the operating system -->
+    </PREMIS:rights>
+    
+    <PREMIS:rights>
+        <PREMIS:rightsStatement>
+            <PREMIS:rightsStatementIdentifier>
+                <PREMIS:rightsStatementIdentifierType></PREMIS:rightsStatementIdentifierType>
+                <PREMIS:rightsStatementIdentifierValue></PREMIS:rightsStatementIdentifierValue>
+            </PREMIS:rightsStatementIdentifier>
+            <PREMIS:rightsBasis></PREMIS:rightsBasis>
+        </PREMIS:rightsStatement>
+        <!-- You need to add enough information to adequately describe the rights situation as it relates to administrative actions for the image software -->
+    </PREMIS:rights>
+</PREMIS:premis>
