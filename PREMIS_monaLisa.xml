@@ -233,6 +233,17 @@
     <PREMIS:agent>
         <PREMIS:agentIdentifier>
             <PREMIS:agentIdentifierType>VIAF</PREMIS:agentIdentifierType>
+            <PREMIS:agentIdentifierValue>24604287</PREMIS:agentIdentifierValue>
+        </PREMIS:agentIdentifier>
+        <PREMIS:agentName>Leonardo, da Vinci, 1452-1519</PREMIS:agentName>
+        <PREMIS:agentType>person</PREMIS:agentType>
+        <!--  Vicki added this block to indicate the creator of the painting  -->
+    </PREMIS:agent>
+    
+    
+    <PREMIS:agent>
+        <PREMIS:agentIdentifier>
+            <PREMIS:agentIdentifierType>VIAF</PREMIS:agentIdentifierType>
             <PREMIS:agentIdentifierValue>154701873</PREMIS:agentIdentifierValue>
         </PREMIS:agentIdentifier>
         <PREMIS:agentName>Apple computer, Inc.</PREMIS:agentName>
@@ -252,6 +263,18 @@
             <PREMIS:rightsBasis/>
         </PREMIS:rightsStatement>
         <!--  You need to add enough information to adequately describe the rights situation as it relates to administrative actions for the image file  -->
+    </PREMIS:rights>
+    
+    
+    <PREMIS:rights>
+        <PREMIS:rightsStatement>
+            <PREMIS:rightsStatementIdentifier>
+                <PREMIS:rightsStatementIdentifierType/>
+                <PREMIS:rightsStatementIdentifierValue/>
+            </PREMIS:rightsStatementIdentifier>
+            <PREMIS:rightsBasis/>
+        </PREMIS:rightsStatement>
+        <!--  Vicki added this to  describe the rights situation as it relates to the painting itself  -->
     </PREMIS:rights>
     
     
