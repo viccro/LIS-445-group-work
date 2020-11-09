@@ -70,70 +70,52 @@
             </CDWA:indexingDatesSet>
         </CDWA:indexingDatesWrap>
         <CDWA:locationWrap>
+            <!-- information from https://www.louvre.fr/en/oeuvre-notices/mona-lisa-portrait-lisa-gherardini-wife-francesco-del-giocondo -->
             <CDWA:locationSet>
                 <CDWA:locationName CDWA:locID="80020283" CDWA:locIDtype="NAF">Musée du Louvre</CDWA:locationName>
-                <CDWA:workID></CDWA:workID>
+                <CDWA:workID>INV. 779</CDWA:workID>
             </CDWA:locationSet>
         </CDWA:locationWrap>
+        
         <CDWA:indexingSubjectWrap>
+            <!-- chose not to repeat concepts available elsewhere in the record in this subject section -->
             <CDWA:indexingSubjectSet>
-                <CDWA:extentSubject></CDWA:extentSubject>
-                <CDWA:subjectTerm></CDWA:subjectTerm>
+                <CDWA:subjectTerm CDWA:termsource="LOC" CDWA:termsourceID="80015636">Del Giocondo, Lisa, 1497-</CDWA:subjectTerm>
             </CDWA:indexingSubjectSet>
         </CDWA:indexingSubjectWrap>
+        
         <CDWA:classWrap>
-            <CDWA:classification></CDWA:classification>
+            <CDWA:classification CDWA:termsource="AAT" CDWA:termsourceID="300033799">oil paintings (visual works)</CDWA:classification> 
+            <CDWA:classification CDWA:termsource="AAT" CDWA:termsourceID="300021140">Renaissance</CDWA:classification>
         </CDWA:classWrap>
+        
         <CDWA:descriptiveNoteWrap>
             <CDWA:descriptiveNoteSet>
-                <CDWA:descriptiveNote></CDWA:descriptiveNote>
-                <CDWA:sourceDescriptiveNote></CDWA:sourceDescriptiveNote>
+                <CDWA:descriptiveNote>The Mona Lisa or La Gioconda is a half-length portrait painting by the Italian artist Leonardo da Vinci. Considered an archetypal masterpiece of the Italian Renaissance, it has been described as "the best known, the most visited, the most written about, the most sung about, the most parodied work of art in the world". The painting's novel qualities include the subject's enigmatic expression, the monumentality of the composition, the subtle modelling of forms, and the atmospheric illusionism. </CDWA:descriptiveNote>
+                <CDWA:sourceDescriptiveNote>“Mona Lisa.” In Wikipedia, November 1, 2020. https://en.wikipedia.org/w/index.php?title=Mona_Lisa&amp;oldid=986599942.
+                </CDWA:sourceDescriptiveNote>
             </CDWA:descriptiveNoteSet>
         </CDWA:descriptiveNoteWrap>
-        <CDWA:inscriptionsWrap>
-            <CDWA:inscriptions></CDWA:inscriptions>
-        </CDWA:inscriptionsWrap>
-        <CDWA:relatedWorksWrap>
-            <CDWA:relatedWorkSet>
-                <CDWA:linkRelatedWork></CDWA:linkRelatedWork>
-                <CDWA:relatedWorkRelType></CDWA:relatedWorkRelType>
-                <CDWA:labelRelatedWork></CDWA:labelRelatedWork>
-                <CDWA:locRelatedWork></CDWA:locRelatedWork>
-            </CDWA:relatedWorkSet>
-        </CDWA:relatedWorksWrap>
+        
+<!-- there is no inscription on the Mona Lisa--> 
+        
+     <!-- there are too many related works to name, and no one specific work by Leonardo da Vinci that is related. --> 
+        
     </CDWA:descriptiveMetadata>
+    
     <CDWA:administrativeMetadata>
-        <CDWA:rightsWork></CDWA:rightsWork>
+        <CDWA:rightsWork CDWA:type="copyright">Public domain</CDWA:rightsWork>
         <CDWA:recordWrap>
-            <CDWA:recordID></CDWA:recordID>
-            <CDWA:recordType></CDWA:recordType>
-            <CDWA:recordSource></CDWA:recordSource>
-            <CDWA:recordInfoWrap>
-                <CDWA:recordInfoID></CDWA:recordInfoID>
-                <CDWA:recordInfoLink></CDWA:recordInfoLink>
-                <CDWA:recordRelID></CDWA:recordRelID>
-                <CDWA:recordMetadataLoc></CDWA:recordMetadataLoc>
-                <CDWA:recordMetadataDate></CDWA:recordMetadataDate>
-            </CDWA:recordInfoWrap>
+            <CDWA:recordID>Inv. 779</CDWA:recordID>
+            <CDWA:recordType>item</CDWA:recordType>
+            <CDWA:recordSource>Musée du Louvre (Paris, France)</CDWA:recordSource>
+            
+    <!-- The recordInfoWrap information was not required. deleted secion --> 
+
         </CDWA:recordWrap>
-        <CDWA:resourceWrap>
-            <CDWA:resourceSet>
-                <CDWA:linkResource></CDWA:linkResource>
-                <CDWA:resourceID></CDWA:resourceID>
-                <CDWA:resourceRelType></CDWA:resourceRelType>
-                <CDWA:resourceType></CDWA:resourceType>
-                <CDWA:rightsResource></CDWA:rightsResource>
-                <CDWA:resourceViewDescription></CDWA:resourceViewDescription>
-                <CDWA:resourceViewType></CDWA:resourceViewType>
-                <CDWA:resourceViewSubjectTerm></CDWA:resourceViewSubjectTerm>
-                <CDWA:resourceViewDate></CDWA:resourceViewDate>
-                <CDWA:resourceSource></CDWA:resourceSource>
-                <CDWA:linkRelatedResource>
-                    <CDWA:relatedResourceRelType></CDWA:relatedResourceRelType>
-                    <CDWA:labelRelatedResource></CDWA:labelRelatedResource>
-                </CDWA:linkRelatedResource>
-                <CDWA:resourceMetadataLoc></CDWA:resourceMetadataLoc>
-            </CDWA:resourceSet>
-        </CDWA:resourceWrap>
+        
+    <!-- The resourceWrap information was not required. deleted secion. We will talk about a digital surrogate item when we make the record for the digital image--> 
+        
+
     </CDWA:administrativeMetadata>
 </CDWA:cdwalite>
