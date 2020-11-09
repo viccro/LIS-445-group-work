@@ -196,7 +196,7 @@
         </PREMIS:linkingObjectIdentifier>
         <!--  You need to add enough metadata values and optional elements to indicate the creation of the digital image  -->
     </PREMIS:event>
-    
+
     
     <PREMIS:event>
         <PREMIS:eventIdentifier>
