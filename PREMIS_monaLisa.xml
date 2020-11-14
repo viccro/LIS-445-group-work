@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PREMIS:premis xmlns:PREMIS="http://www.loc.gov/premis/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/premis/v3 https://www.loc.gov/standards/premis/premis.xsd" version="3.0">
+
+<!--  FRBR Work for the idea of the Mona Lisa  -->
     <PREMIS:object xsi:type="PREMIS:intellectualEntity">
         <PREMIS:objectIdentifier>
             <PREMIS:objectIdentifierType>Local</PREMIS:objectIdentifierType>
             <PREMIS:objectIdentifierValue>001</PREMIS:objectIdentifierValue>
         </PREMIS:objectIdentifier>
 
+<!-- Relationship to the physical painting -->
         <PREMIS:relationship>
             <PREMIS:relationshipType>structural</PREMIS:relationshipType>
             <PREMIS:relationshipSubType>isRepresentedby</PREMIS:relationshipSubType>
-            <!-- Link to the physical painting -->
             <PREMIS:relatedObjectIdentifier>
                 <PREMIS:relatedObjectIdentifierType></PREMIS:relatedObjectIdentifierType>
                 <!-- This is the Louvre catalog number for the Mona Lisa-->
@@ -28,10 +30,9 @@
                 <PREMIS:relatedObjectIdentifierValue>https://upload.wikimedia.org/wikipedia/commons/b/b1/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF.jpg</PREMIS:relatedObjectIdentifierValue>
             </PREMIS:relatedObjectIdentifier>
         </PREMIS:relationship>
-        <!--  You need to add enough optional elements to indicated that this is the FRBR Work for the idea of the Mona Lisa  -->
     </PREMIS:object>
     
-    
+<!--  the physical painting  -->
     <PREMIS:object xsi:type="PREMIS:representation">
         <PREMIS:objectIdentifier>
             <PREMIS:objectIdentifierType></PREMIS:objectIdentifierType> 
@@ -46,19 +47,18 @@
             <PREMIS:significantPropertiesValue>oil on poplar panel</PREMIS:significantPropertiesValue>  
         </PREMIS:significantProperties>
         
+<!-- Relationship to the FRBR Work -->        
         <PREMIS:relationship>
             <PREMIS:relationshipType>structural</PREMIS:relationshipType>
             <PREMIS:relationshipSubType>represents</PREMIS:relationshipSubType>
-            <!-- Link to the physical painting -->
             <PREMIS:relatedObjectIdentifier>
                 <PREMIS:relatedObjectIdentifierType>local</PREMIS:relatedObjectIdentifierType>
                 <PREMIS:relatedObjectIdentifierValue>001</PREMIS:relatedObjectIdentifierValue>
             </PREMIS:relatedObjectIdentifier>
         </PREMIS:relationship>
-        <!--  You need to add enough optional elements to indicate that this is the physical painting  -->
     </PREMIS:object>
     
-    
+<!-- the digital image of the painting  -->
     <PREMIS:object xsi:type="PREMIS:file">
         <PREMIS:objectIdentifier>
             <PREMIS:objectIdentifierType>URL</PREMIS:objectIdentifierType>
@@ -81,49 +81,47 @@
                 </PREMIS:formatRegistry>
             </PREMIS:format>
         </PREMIS:objectCharacteristics>
-        
+
+<!-- Relationship to the FRBR Work -->        
         <PREMIS:relationship>
             <PREMIS:relationshipType>structural</PREMIS:relationshipType>
             <PREMIS:relationshipSubType>represents</PREMIS:relationshipSubType>
-            <!-- Link to the physical painting -->
             <PREMIS:relatedObjectIdentifier>
                 <PREMIS:relatedObjectIdentifierType>local</PREMIS:relatedObjectIdentifierType>
                 <!-- This is the Louvre catalog number for the Mona Lisa-->
                 <PREMIS:relatedObjectIdentifierValue>001</PREMIS:relatedObjectIdentifierValue>
             </PREMIS:relatedObjectIdentifier>
         </PREMIS:relationship>
-        
+ 
+<!-- Relationship to the viewing software --> 
         <PREMIS:relationship>
             <PREMIS:relationshipType>dependency</PREMIS:relationshipType>
             <PREMIS:relationshipSubType>requires</PREMIS:relationshipSubType>
-            <!-- Link to the physical painting -->
             <PREMIS:relatedObjectIdentifier>
-                <PREMIS:relatedObjectIdentifierType>Version number</PREMIS:relatedObjectIdentifierType>
+                <PREMIS:relatedObjectIdentifierType>Software: Version number</PREMIS:relatedObjectIdentifierType>
                 <!-- This is the Louvre catalog number for the Mona Lisa-->
-                <PREMIS:relatedObjectIdentifierValue>10.1 (944.6.16.1)</PREMIS:relatedObjectIdentifierValue>
+                <PREMIS:relatedObjectIdentifierValue>Preview: 10.1 (944.6.16.1)</PREMIS:relatedObjectIdentifierValue>
             </PREMIS:relatedObjectIdentifier>
         </PREMIS:relationship>
-        <!--  You need to add enough metadata values and optional elements to indicate that this is the digital image of the painting  -->
     </PREMIS:object>
     
-    
+<!-- the hardware used to render the image -->    
     <PREMIS:object xsi:type="PREMIS:intellectualEntity">
         <PREMIS:objectIdentifier>
-            <PREMIS:objectIdentifierType>Serial number</PREMIS:objectIdentifierType>
-            <PREMIS:objectIdentifierValue>C02ZK336LVDL</PREMIS:objectIdentifierValue>
+            <PREMIS:objectIdentifierType>Device: Serial number</PREMIS:objectIdentifierType>
+            <PREMIS:objectIdentifierValue>MacBook Pro: C02ZK336LVDL</PREMIS:objectIdentifierValue>
         </PREMIS:objectIdentifier>
         <PREMIS:environmentFunction>
             <PREMIS:environmentFunctionType>hardware</PREMIS:environmentFunctionType>
             <PREMIS:environmentFunctionLevel>1</PREMIS:environmentFunctionLevel>
         </PREMIS:environmentFunction>
-        <!--  You need to add enough optional elements to indicate that this is the hardware used to render your digital image  -->
     </PREMIS:object>
     
-    
+<!-- the OS the hardware uses -->    
     <PREMIS:object xsi:type="PREMIS:intellectualEntity">
         <PREMIS:objectIdentifier>
-            <PREMIS:objectIdentifierType>Version number</PREMIS:objectIdentifierType>
-            <PREMIS:objectIdentifierValue>10.14.6</PREMIS:objectIdentifierValue>
+            <PREMIS:objectIdentifierType>Software: Version number</PREMIS:objectIdentifierType>
+            <PREMIS:objectIdentifierValue>macOS Mojave: 10.14.6</PREMIS:objectIdentifierValue>
         </PREMIS:objectIdentifier>
         <PREMIS:environmentFunction>
             <PREMIS:environmentFunctionType>software</PREMIS:environmentFunctionType>
@@ -133,19 +131,25 @@
             <PREMIS:environmentFunctionType>operating system</PREMIS:environmentFunctionType>
             <PREMIS:environmentFunctionLevel>2</PREMIS:environmentFunctionLevel>
         </PREMIS:environmentFunction>
-        
+     
+<!-- Relationship to the hardware needed to run the operating system -->
         <PREMIS:relationship>
             <PREMIS:relationshipType>dependency</PREMIS:relationshipType>
             <PREMIS:relationshipSubType>isDeployedOn</PREMIS:relationshipSubType>
-            <!-- Link to the hardware needed to run the operating system -->
             <PREMIS:relatedObjectIdentifier>
-                <PREMIS:relatedObjectIdentifierType>Serial number</PREMIS:relatedObjectIdentifierType>
-                <PREMIS:relatedObjectIdentifierValue>C02ZK336LVDL</PREMIS:relatedObjectIdentifierValue>
+                <PREMIS:relatedObjectIdentifierType>Device: Serial number</PREMIS:relatedObjectIdentifierType>
+                <PREMIS:relatedObjectIdentifierValue>MacBook Pro: C02ZK336LVDL</PREMIS:relatedObjectIdentifierValue>
             </PREMIS:relatedObjectIdentifier>
         </PREMIS:relationship>
-        <!--  You need to add enough optional elements to indicate that this is the operating system your hardware uses  -->
+        
+<!-- Link to Apple Rights Statement -->
+        <PREMIS:linkingRightsStatementIdentifier>
+            <PREMIS:linkingRightsStatementIdentifierType>local</PREMIS:linkingRightsStatementIdentifierType>
+            <PREMIS:linkingRightsStatementIdentifierValue>Rights Statement Apple</PREMIS:linkingRightsStatementIdentifierValue>
+        </PREMIS:linkingRightsStatementIdentifier> 
     </PREMIS:object>
-    
+
+<!-- the software used to view the image file -->
     <PREMIS:object xsi:type="PREMIS:intellectualEntity">
         <PREMIS:objectIdentifier>
             <PREMIS:objectIdentifierType>Software: Version number</PREMIS:objectIdentifierType>
@@ -160,19 +164,41 @@
             <PREMIS:environmentFunctionLevel>2</PREMIS:environmentFunctionLevel>
         </PREMIS:environmentFunction>
         
+<!-- Relationship to the to the operating system needed to run the software -->
         <PREMIS:relationship>
             <PREMIS:relationshipType>dependency</PREMIS:relationshipType>
             <PREMIS:relationshipSubType>isDeployedOn</PREMIS:relationshipSubType>
-            <!-- Link to the to the operating system needed to run the software -->
             <PREMIS:relatedObjectIdentifier>
-                <PREMIS:relatedObjectIdentifierType>Operating system: version number</PREMIS:relatedObjectIdentifierType>
-                <PREMIS:relatedObjectIdentifierValue>MacOS Mojave: 10.14.6</PREMIS:relatedObjectIdentifierValue>
+                <PREMIS:relatedObjectIdentifierType>Software: version number</PREMIS:relatedObjectIdentifierType>
+                <PREMIS:relatedObjectIdentifierValue>macOS Mojave: 10.14.6</PREMIS:relatedObjectIdentifierValue>
             </PREMIS:relatedObjectIdentifier>
         </PREMIS:relationship>
-        <!--  You need to add enough optional elements to indicate that this is the software used to view the image file  -->
+        
+<!-- Link to Apple Rights Statement -->
+        <PREMIS:linkingRightsStatementIdentifier>
+            <PREMIS:linkingRightsStatementIdentifierType>local</PREMIS:linkingRightsStatementIdentifierType>
+            <PREMIS:linkingRightsStatementIdentifierValue>Rights Statement Apple</PREMIS:linkingRightsStatementIdentifierValue>
+        </PREMIS:linkingRightsStatementIdentifier> 
     </PREMIS:object>
     
+<!-- the checksum of the digital image -->
+    <PREMIS:object xsi:type="PREMIS:bitstream">
+        <PREMIS:objectIdentifier>
+            <PREMIS:objectIdentifierType>local</PREMIS:objectIdentifierType>
+            <PREMIS:objectIdentifierValue>Image Checksum</PREMIS:objectIdentifierValue>
+        </PREMIS:objectIdentifier>
+        
+        <PREMIS:significantProperties>
+            <PREMIS:significantPropertiesType></PREMIS:significantPropertiesType>
+            <PREMIS:significantPropertiesValue></PREMIS:significantPropertiesValue>
+        </PREMIS:significantProperties>
+        
+        <PREMIS:objectCharacteristics>
+            <PREMIS:format></PREMIS:format>
+        </PREMIS:objectCharacteristics>
+    </PREMIS:object>    
     
+<!-- Event - creation of the digital image -->    
     <PREMIS:event>
         <PREMIS:eventIdentifier>
             <PREMIS:eventIdentifierType>Local</PREMIS:eventIdentifierType>
@@ -182,20 +208,23 @@
         <PREMIS:eventDateTime>20110607T0846</PREMIS:eventDateTime>
         
 <!-- Do not need outcome information, understood that the image exists-->
-        
+ 
+ <!-- Link to rights holder -->
         <PREMIS:linkingAgentIdentifier>
             <PREMIS:linkingAgentIdentifierType>Handle</PREMIS:linkingAgentIdentifierType>
             <PREMIS:linkingAgentIdentifierValue>Dcoetzee</PREMIS:linkingAgentIdentifierValue>
             <PREMIS:linkingAgentRole>Creator</PREMIS:linkingAgentRole>
-        </PREMIS:linkingAgentIdentifier>        
+        </PREMIS:linkingAgentIdentifier>  
+        
+<!-- link to digital image -->
         <PREMIS:linkingObjectIdentifier>
-            <PREMIS:linkingObjectIdentifierType>URL</PREMIS:linkingObjectIdentifierType>                    <PREMIS:linkingObjectIdentifierValue>https://upload.wikimedia.org/wikipedia/commons/b/b1/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF.jpg</PREMIS:linkingObjectIdentifierValue>
+            <PREMIS:linkingObjectIdentifierType>URL</PREMIS:linkingObjectIdentifierType>                    
+            <PREMIS:linkingObjectIdentifierValue>https://upload.wikimedia.org/wikipedia/commons/b/b1/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF.jpg</PREMIS:linkingObjectIdentifierValue>
             <PREMIS:linkingObjectRole>Outcome</PREMIS:linkingObjectRole>
         </PREMIS:linkingObjectIdentifier>
-        <!--  You need to add enough metadata values and optional elements to indicate the creation of the digital image  -->
     </PREMIS:event>
     
-    
+<!-- Event - creation of the checksum -->    
     <PREMIS:event>
         <PREMIS:eventIdentifier>
             <PREMIS:eventIdentifierType>Local</PREMIS:eventIdentifierType>
@@ -203,20 +232,67 @@
         </PREMIS:eventIdentifier>
         <PREMIS:eventType>Creation</PREMIS:eventType>
         <PREMIS:eventDateTime>2020-11-10T22:57:00+0000</PREMIS:eventDateTime>
-        <!--  You need to add enough metadata values and optional elements to indicate that this is the checksum process for the image file  -->
+        
+<!-- Link to checksum agent -->
+        <PREMIS:linkingAgentIdentifier>
+            <PREMIS:linkingAgentIdentifierType>Software: Version number</PREMIS:linkingAgentIdentifierType>
+            <PREMIS:linkingAgentIdentifierValue>shasum: 5.84</PREMIS:linkingAgentIdentifierValue>
+        </PREMIS:linkingAgentIdentifier>
+        
+<!-- Link to checksum object -->
+        <PREMIS:linkingObjectIdentifier>
+            <PREMIS:linkingObjectIdentifierType>local</PREMIS:linkingObjectIdentifierType>
+            <PREMIS:linkingObjectIdentifierValue>Image Checksum</PREMIS:linkingObjectIdentifierValue>
+        </PREMIS:linkingObjectIdentifier>
+                
     </PREMIS:event>
-    
-    
+
+<!-- Event - creation of the painting -->    
+    <PREMIS:event>
+        <PREMIS:eventIdentifier>
+            <PREMIS:eventIdentifierType>Local</PREMIS:eventIdentifierType>
+            <PREMIS:eventIdentifierValue>Event creation painting</PREMIS:eventIdentifierValue>
+        </PREMIS:eventIdentifier>
+        <PREMIS:eventType>Creation</PREMIS:eventType>
+        <PREMIS:eventDateTime>1503</PREMIS:eventDateTime>
+ 
+<!-- link to the creator -->
+        <PREMIS:linkingAgentIdentifier>
+            <PREMIS:linkingAgentIdentifierType>VIAF</PREMIS:linkingAgentIdentifierType>
+            <PREMIS:linkingAgentIdentifierValue>24604287</PREMIS:linkingAgentIdentifierValue>
+        </PREMIS:linkingAgentIdentifier>
+        
+<!-- link to the painting -->
+        <PREMIS:linkingObjectIdentifier>
+            <PREMIS:linkingObjectIdentifierType></PREMIS:linkingObjectIdentifierType>
+            <PREMIS:linkingObjectIdentifierValue>INV.779</PREMIS:linkingObjectIdentifierValue>
+        </PREMIS:linkingObjectIdentifier>
+    </PREMIS:event>
+
+<!-- Agent that created the checksum -->    
     <PREMIS:agent>
         <PREMIS:agentIdentifier>
-            <PREMIS:agentIdentifierType>??</PREMIS:agentIdentifierType>
-            <PREMIS:agentIdentifierValue>??</PREMIS:agentIdentifierValue>
+            <PREMIS:agentIdentifierType>Software: Version number</PREMIS:agentIdentifierType>
+            <PREMIS:agentIdentifierValue>shasum: 5.84</PREMIS:agentIdentifierValue>
         </PREMIS:agentIdentifier>
         <PREMIS:agentName>shasum</PREMIS:agentName>
-        <!--  You need to add enough metadata values and optional elements to indicate the checksum process agent  -->
+        <PREMIS:agentVersion>5.84</PREMIS:agentVersion>
+
+<!-- link to checksum creation event -->
+        <PREMIS:linkingEventIdentifier>
+            <PREMIS:linkingEventIdentifierType>local</PREMIS:linkingEventIdentifierType>
+            <PREMIS:linkingEventIdentifierValue>Event creation checksum</PREMIS:linkingEventIdentifierValue>
+        </PREMIS:linkingEventIdentifier>
+        
+<!-- link to operating system that the agent runs on -->
+        <PREMIS:linkingEnvironmentIdentifier>
+            <PREMIS:linkingEnvironmentIdentifierType>Software: Version number</PREMIS:linkingEnvironmentIdentifierType>
+            <PREMIS:linkingEnvironmentIdentifierValue>macOS Mojave: 10.14.6</PREMIS:linkingEnvironmentIdentifierValue>
+            <PREMIS:linkingEnvironmentRole>operating system</PREMIS:linkingEnvironmentRole>
+        </PREMIS:linkingEnvironmentIdentifier>
     </PREMIS:agent>
     
-    
+<!-- Rights holder for the image file -->    
     <PREMIS:agent>
         <PREMIS:agentIdentifier>
             <PREMIS:agentIdentifierType>handle</PREMIS:agentIdentifierType>
@@ -224,10 +300,21 @@
         </PREMIS:agentIdentifier>
         <PREMIS:agentName>Dcoetzee</PREMIS:agentName>
         <PREMIS:agentType>person</PREMIS:agentType>
-        <!--  You need to add enough metadata values and optional elements to indicate the rights holder for the image file  -->
+
+<!-- link to creation event -->
+        <PREMIS:linkingEventIdentifier>
+            <PREMIS:linkingEventIdentifierType>local</PREMIS:linkingEventIdentifierType>
+            <PREMIS:linkingEventIdentifierValue>Event Creation Digital Image</PREMIS:linkingEventIdentifierValue>
+        </PREMIS:linkingEventIdentifier>
+        
+<!-- link to image file rights statement -->
+        <PREMIS:linkingRightsStatementIdentifier>
+            <PREMIS:linkingRightsStatementIdentifierType>local</PREMIS:linkingRightsStatementIdentifierType>
+            <PREMIS:linkingRightsStatementIdentifierValue>Rights Statement Image File</PREMIS:linkingRightsStatementIdentifierValue>
+        </PREMIS:linkingRightsStatementIdentifier>
     </PREMIS:agent>
     
-    
+<!-- Creator of the painting -->
     <PREMIS:agent>
         <PREMIS:agentIdentifier>
             <PREMIS:agentIdentifierType>VIAF</PREMIS:agentIdentifierType>
@@ -235,10 +322,22 @@
         </PREMIS:agentIdentifier>
         <PREMIS:agentName>Leonardo, da Vinci, 1452-1519</PREMIS:agentName>
         <PREMIS:agentType>person</PREMIS:agentType>
-        <!--  Vicki added this block to indicate the creator of the painting  -->
+ 
+<!-- link to creation event -->
+        <PREMIS:linkingEventIdentifier>
+            <PREMIS:linkingEventIdentifierType>local</PREMIS:linkingEventIdentifierType>
+            <PREMIS:linkingEventIdentifierValue>Event creation painting</PREMIS:linkingEventIdentifierValue>
+        </PREMIS:linkingEventIdentifier>
+    
+<!-- link to rights statement held by agent -->    
+        <PREMIS:linkingRightsStatementIdentifier>
+            <PREMIS:linkingRightsStatementIdentifierType>local</PREMIS:linkingRightsStatementIdentifierType>
+            <PREMIS:linkingRightsStatementIdentifierValue>Rights Statement Painting</PREMIS:linkingRightsStatementIdentifierValue>
+        </PREMIS:linkingRightsStatementIdentifier>
+       
     </PREMIS:agent>
     
-    
+<!-- Rights holder for OS and Software -->    
     <PREMIS:agent>
         <PREMIS:agentIdentifier>
             <PREMIS:agentIdentifierType>VIAF</PREMIS:agentIdentifierType>
@@ -246,56 +345,91 @@
         </PREMIS:agentIdentifier>
         <PREMIS:agentName>Apple computer, Inc.</PREMIS:agentName>
         <PREMIS:agentType>organization</PREMIS:agentType>
-        <!--  You need to add enough metadata values and optional elements to indicate the rights holder for your operating system  -->
-        <!--  Also this is the rights holder for the software -->
+        
+        <PREMIS:linkingRightsStatementIdentifier>
+            <PREMIS:linkingRightsStatementIdentifierType>local</PREMIS:linkingRightsStatementIdentifierType>
+            <PREMIS:linkingRightsStatementIdentifierValue>Rights Statement Apple</PREMIS:linkingRightsStatementIdentifierValue>
+        </PREMIS:linkingRightsStatementIdentifier>
     </PREMIS:agent>
     
-    
-    <!--  You may need to add additional agents related to your software choices and or your checksum process  -->
+ <!-- Rights statement for image file -->   
     <PREMIS:rights>
         <PREMIS:rightsStatement>
             <PREMIS:rightsStatementIdentifier>
-                <PREMIS:rightsStatementIdentifierType/>
-                <PREMIS:rightsStatementIdentifierValue/>
+                <PREMIS:rightsStatementIdentifierType>local</PREMIS:rightsStatementIdentifierType>
+                <PREMIS:rightsStatementIdentifierValue>Rights Statement Image File</PREMIS:rightsStatementIdentifierValue>
             </PREMIS:rightsStatementIdentifier>
-            <PREMIS:rightsBasis/>
+            <PREMIS:rightsBasis>copyright</PREMIS:rightsBasis>
+            <PREMIS:copyrightInformation>
+                <PREMIS:copyrightStatus>publicDomain</PREMIS:copyrightStatus>
+                <PREMIS:copyrightJurisdiction>US</PREMIS:copyrightJurisdiction>
+            </PREMIS:copyrightInformation>
+           
+<!-- Link to rights holder -->
+            <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>handle</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>Dcoetzee</PREMIS:linkingAgentIdentifierValue>
+            </PREMIS:linkingAgentIdentifier>
         </PREMIS:rightsStatement>
-        <!--  You need to add enough information to adequately describe the rights situation as it relates to administrative actions for the image file  -->
+        
     </PREMIS:rights>
     
-    
+<!-- Rights statement for painting -->    
     <PREMIS:rights>
         <PREMIS:rightsStatement>
             <PREMIS:rightsStatementIdentifier>
-                <PREMIS:rightsStatementIdentifierType/>
-                <PREMIS:rightsStatementIdentifierValue/>
+                <PREMIS:rightsStatementIdentifierType>local</PREMIS:rightsStatementIdentifierType>
+                <PREMIS:rightsStatementIdentifierValue>Rights Statement Painting</PREMIS:rightsStatementIdentifierValue>
             </PREMIS:rightsStatementIdentifier>
-            <PREMIS:rightsBasis/>
+            <PREMIS:rightsBasis>copyright</PREMIS:rightsBasis>
+            <PREMIS:copyrightInformation>
+                <PREMIS:copyrightStatus>publicdomain</PREMIS:copyrightStatus>
+                <PREMIS:copyrightJurisdiction>US</PREMIS:copyrightJurisdiction>
+            </PREMIS:copyrightInformation>
+            
+<!-- link to rights holder of painting -->
+            <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>IAF</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>24604287</PREMIS:linkingAgentIdentifierValue>
+            </PREMIS:linkingAgentIdentifier>
         </PREMIS:rightsStatement>
-        <!--  Vicki added this to  describe the rights situation as it relates to the painting itself  -->
+     
     </PREMIS:rights>
     
-    
+<!-- Rights statement for OS and software -->    
     <PREMIS:rights>
         <PREMIS:rightsStatement>
             <PREMIS:rightsStatementIdentifier>
-                <PREMIS:rightsStatementIdentifierType/>
-                <PREMIS:rightsStatementIdentifierValue/>
+                <PREMIS:rightsStatementIdentifierType>local</PREMIS:rightsStatementIdentifierType>
+                <PREMIS:rightsStatementIdentifierValue>Rights Statement Apple</PREMIS:rightsStatementIdentifierValue>
             </PREMIS:rightsStatementIdentifier>
-            <PREMIS:rightsBasis/>
+            <PREMIS:rightsBasis>copyright</PREMIS:rightsBasis>
+            <PREMIS:copyrightInformation>
+                <PREMIS:copyrightStatus>copyrighted</PREMIS:copyrightStatus>
+                <PREMIS:copyrightJurisdiction>US</PREMIS:copyrightJurisdiction>
+            </PREMIS:copyrightInformation>
+            
+<!-- Link to image viewer software -->
+            <PREMIS:linkingObjectIdentifier>
+                <PREMIS:linkingObjectIdentifierType>Software: Version number</PREMIS:linkingObjectIdentifierType>
+                <PREMIS:linkingObjectIdentifierValue>Preview: 10.1 (944.6.16.1)</PREMIS:linkingObjectIdentifierValue>
+            </PREMIS:linkingObjectIdentifier>
+            
+<!-- Link to operating system -->
+            <PREMIS:linkingObjectIdentifier>
+                <PREMIS:linkingObjectIdentifierType>Software: Version number</PREMIS:linkingObjectIdentifierType>
+                <PREMIS:linkingObjectIdentifierValue>macOS Mojave: 10.14.6</PREMIS:linkingObjectIdentifierValue>
+            </PREMIS:linkingObjectIdentifier>
+            
+<!-- Link to rights holder -->
+            <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>VIAF</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>154701873</PREMIS:linkingAgentIdentifierValue>
+            </PREMIS:linkingAgentIdentifier>
+            
         </PREMIS:rightsStatement>
-        <!--  You need to add enough information to adequately describe the rights situation as it relates to administrative actions for the operating system  -->
     </PREMIS:rights>
     
-    
-    <PREMIS:rights>
-        <PREMIS:rightsStatement>
-            <PREMIS:rightsStatementIdentifier>
-                <PREMIS:rightsStatementIdentifierType/>
-                <PREMIS:rightsStatementIdentifierValue/>
-            </PREMIS:rightsStatementIdentifier>
-            <PREMIS:rightsBasis/>
-        </PREMIS:rightsStatement>
-        <!--  You need to add enough information to adequately describe the rights situation as it relates to administrative actions for the image software  -->
-    </PREMIS:rights>
+<!-- Removed separate software rights; it's the same as the OS -->    
+
 </PREMIS:premis>
