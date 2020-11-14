@@ -47,7 +47,8 @@
             <CDWA:indexingMeasurementsSet>
                 <CDWA:measurementsSet CDWA:value="0.53" CDWA:type="width" CDWA:unit="m"/>
             </CDWA:indexingMeasurementsSet>
-        </CDWA:indexingMeasurementsWrap>
+            
+        </CDWA:indexingMeasurementsWrap>        
         <CDWA:displayMaterialsTech>oil on poplar panel</CDWA:displayMaterialsTech>
         <CDWA:indexingMaterialsTechWrap>
             <CDWA:indexingMaterialsTechSet>
@@ -55,12 +56,14 @@
                 <CDWA:termMaterialsTech CDWA:termsource="AAT">oil paint (paint)</CDWA:termMaterialsTech>
             </CDWA:indexingMaterialsTechSet>
         </CDWA:indexingMaterialsTechWrap>
+        
         <CDWA:styleWrap>
             <CDWA:style CDWA:termsource="AAT" CDWA:termsourceID="300021140">Renaissance</CDWA:style>
         </CDWA:styleWrap>
         <CDWA:cultureWrap>
             <CDWA:culture CDWA:termsourceID="AAT" CDWA:termsource="300111198">Italian (culture or style)</CDWA:culture>
         </CDWA:cultureWrap>
+        
         <CDWA:displayCreationDate>circa 1503-1506, perhaps 1517</CDWA:displayCreationDate>
         <CDWA:indexingDatesWrap>
             <CDWA:indexingDatesSet>

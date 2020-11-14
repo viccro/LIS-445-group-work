@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PREMIS:premis xmlns:PREMIS="http://www.loc.gov/premis/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.loc.gov/standards/premis/premis.xsd" version="3.0">
+<PREMIS:premis xmlns:PREMIS="http://www.loc.gov/premis/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/premis/v3 https://www.loc.gov/standards/premis/premis.xsd" version="3.0">
     <PREMIS:object xsi:type="PREMIS:intellectualEntity">
         <PREMIS:objectIdentifier>
             <PREMIS:objectIdentifierType>Local</PREMIS:objectIdentifierType>
@@ -17,13 +17,14 @@
             </PREMIS:relatedObjectIdentifier>
         </PREMIS:relationship>
 
+<!-- Relationship is to the digital image -->
         <PREMIS:relationship>
             <PREMIS:relationshipType>structural</PREMIS:relationshipType>
             <PREMIS:relationshipSubType>isRepresentedby</PREMIS:relationshipSubType>
-            <!-- Link to the digital image -->
+            <!-- Relationship is to the digital image -->
             <PREMIS:relatedObjectIdentifier>
                 <PREMIS:relatedObjectIdentifierType>URL</PREMIS:relatedObjectIdentifierType>
-                <!-- This is the Wikipedia file name for the hero image on the Wiki Page -->
+                <!-- This is the Wikipedia file name for the full, high resolition digital image from which the hero image on the Wiki Page was generated-->
                 <PREMIS:relatedObjectIdentifierValue>https://upload.wikimedia.org/wikipedia/commons/b/b1/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF.jpg</PREMIS:relatedObjectIdentifierValue>
             </PREMIS:relatedObjectIdentifier>
         </PREMIS:relationship>
@@ -75,8 +76,8 @@
                     <PREMIS:formatName>image/jpeg</PREMIS:formatName>
                 </PREMIS:formatDesignation>
                 <PREMIS:formatRegistry>
-                    <PREMIS:formatRegistryName/>
-                    <PREMIS:formatRegistryKey/>
+                    <PREMIS:formatRegistryName></PREMIS:formatRegistryName>
+                    <PREMIS:formatRegistryKey></PREMIS:formatRegistryKey>
                 </PREMIS:formatRegistry>
             </PREMIS:format>
         </PREMIS:objectCharacteristics>
@@ -136,7 +137,7 @@
         <PREMIS:relationship>
             <PREMIS:relationshipType>dependency</PREMIS:relationshipType>
             <PREMIS:relationshipSubType>isDeployedOn</PREMIS:relationshipSubType>
-            <!-- Link to the physical painting -->
+            <!-- Link to the hardware needed to run the operating system -->
             <PREMIS:relatedObjectIdentifier>
                 <PREMIS:relatedObjectIdentifierType>Serial number</PREMIS:relatedObjectIdentifierType>
                 <PREMIS:relatedObjectIdentifierValue>C02ZK336LVDL</PREMIS:relatedObjectIdentifierValue>
@@ -147,8 +148,8 @@
     
     <PREMIS:object xsi:type="PREMIS:intellectualEntity">
         <PREMIS:objectIdentifier>
-            <PREMIS:objectIdentifierType>Version number</PREMIS:objectIdentifierType>
-            <PREMIS:objectIdentifierValue>10.1 (944.6.16.1)</PREMIS:objectIdentifierValue>
+            <PREMIS:objectIdentifierType>Software: Version number</PREMIS:objectIdentifierType>
+            <PREMIS:objectIdentifierValue>Preview: 10.1 (944.6.16.1)</PREMIS:objectIdentifierValue>
         </PREMIS:objectIdentifier>
         <PREMIS:environmentFunction>
             <PREMIS:environmentFunctionType>software</PREMIS:environmentFunctionType>
@@ -162,10 +163,10 @@
         <PREMIS:relationship>
             <PREMIS:relationshipType>dependency</PREMIS:relationshipType>
             <PREMIS:relationshipSubType>isDeployedOn</PREMIS:relationshipSubType>
-            <!-- Link to the physical painting -->
+            <!-- Link to the to the operating system needed to run the software -->
             <PREMIS:relatedObjectIdentifier>
-                <PREMIS:relatedObjectIdentifierType>Version number</PREMIS:relatedObjectIdentifierType>
-                <PREMIS:relatedObjectIdentifierValue>10.14.6</PREMIS:relatedObjectIdentifierValue>
+                <PREMIS:relatedObjectIdentifierType>Operating system: version number</PREMIS:relatedObjectIdentifierType>
+                <PREMIS:relatedObjectIdentifierValue>MacOS Mojave: 10.14.6</PREMIS:relatedObjectIdentifierValue>
             </PREMIS:relatedObjectIdentifier>
         </PREMIS:relationship>
         <!--  You need to add enough optional elements to indicate that this is the software used to view the image file  -->
@@ -174,37 +175,34 @@
     
     <PREMIS:event>
         <PREMIS:eventIdentifier>
-            <PREMIS:eventIdentifierType></PREMIS:eventIdentifierType>
-            <PREMIS:eventIdentifierValue></PREMIS:eventIdentifierValue>
+            <PREMIS:eventIdentifierType>Local</PREMIS:eventIdentifierType>
+            <PREMIS:eventIdentifierValue>Event Creation Digital Image</PREMIS:eventIdentifierValue>
         </PREMIS:eventIdentifier>
         <PREMIS:eventType>creation</PREMIS:eventType>
         <PREMIS:eventDateTime>20110607T0846</PREMIS:eventDateTime>
-        <PREMIS:eventOutcomeInformation>
-            <PREMIS:eventOutcomeDetail>
-                <PREMIS:eventOutcomeDetailNote></PREMIS:eventOutcomeDetailNote>
-            </PREMIS:eventOutcomeDetail>
-        </PREMIS:eventOutcomeInformation>
+        
+<!-- Do not need outcome information, understood that the image exists-->
+        
         <PREMIS:linkingAgentIdentifier>
-            <PREMIS:linkingAgentIdentifierType/>
-            <PREMIS:linkingAgentIdentifierValue/>
-            <PREMIS:linkingAgentRole/>
-        </PREMIS:linkingAgentIdentifier>
+            <PREMIS:linkingAgentIdentifierType>Handle</PREMIS:linkingAgentIdentifierType>
+            <PREMIS:linkingAgentIdentifierValue>Dcoetzee</PREMIS:linkingAgentIdentifierValue>
+            <PREMIS:linkingAgentRole>Creator</PREMIS:linkingAgentRole>
+        </PREMIS:linkingAgentIdentifier>        
         <PREMIS:linkingObjectIdentifier>
-            <PREMIS:linkingObjectIdentifierType/>
-            <PREMIS:linkingObjectIdentifierValue/>
-            <PREMIS:linkingObjectRole/>
+            <PREMIS:linkingObjectIdentifierType>URL</PREMIS:linkingObjectIdentifierType>                    <PREMIS:linkingObjectIdentifierValue>https://upload.wikimedia.org/wikipedia/commons/b/b1/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF.jpg</PREMIS:linkingObjectIdentifierValue>
+            <PREMIS:linkingObjectRole>Outcome</PREMIS:linkingObjectRole>
         </PREMIS:linkingObjectIdentifier>
         <!--  You need to add enough metadata values and optional elements to indicate the creation of the digital image  -->
     </PREMIS:event>
-
+    
     
     <PREMIS:event>
         <PREMIS:eventIdentifier>
-            <PREMIS:eventIdentifierType/>
-            <PREMIS:eventIdentifierValue/>
+            <PREMIS:eventIdentifierType>Local</PREMIS:eventIdentifierType>
+            <PREMIS:eventIdentifierValue>Event creation checksum</PREMIS:eventIdentifierValue>
         </PREMIS:eventIdentifier>
-        <PREMIS:eventType/>
-        <PREMIS:eventDateTime/>
+        <PREMIS:eventType>Creation</PREMIS:eventType>
+        <PREMIS:eventDateTime>2020-11-10T22:57:00+0000</PREMIS:eventDateTime>
         <!--  You need to add enough metadata values and optional elements to indicate that this is the checksum process for the image file  -->
     </PREMIS:event>
     
