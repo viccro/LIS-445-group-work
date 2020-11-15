@@ -13,8 +13,8 @@
             <PREMIS:relationshipType>structural</PREMIS:relationshipType>
             <PREMIS:relationshipSubType>isRepresentedby</PREMIS:relationshipSubType>
             <PREMIS:relatedObjectIdentifier>
-                <PREMIS:relatedObjectIdentifierType></PREMIS:relatedObjectIdentifierType>
-                <!-- This is the Louvre catalog number for the Mona Lisa-->
+                <PREMIS:relatedObjectIdentifierType>local</PREMIS:relatedObjectIdentifierType>
+                <!-- This is the Louvre catalog number for the Mona Lisa. It's not local to us, but it's local to the Louvre! And we didn't have time to find a better match. -->
                 <PREMIS:relatedObjectIdentifierValue>INV.779</PREMIS:relatedObjectIdentifierValue>
             </PREMIS:relatedObjectIdentifier>
         </PREMIS:relationship>
@@ -35,7 +35,7 @@
 <!--  the physical painting  -->
     <PREMIS:object xsi:type="PREMIS:representation">
         <PREMIS:objectIdentifier>
-            <PREMIS:objectIdentifierType></PREMIS:objectIdentifierType> 
+            <PREMIS:objectIdentifierType>local</PREMIS:objectIdentifierType> 
             <PREMIS:objectIdentifierValue>INV.779</PREMIS:objectIdentifierValue>
         </PREMIS:objectIdentifier>
         <PREMIS:significantProperties>
@@ -76,8 +76,8 @@
                     <PREMIS:formatName>image/jpeg</PREMIS:formatName>
                 </PREMIS:formatDesignation>
                 <PREMIS:formatRegistry>
-                    <PREMIS:formatRegistryName></PREMIS:formatRegistryName>
-                    <PREMIS:formatRegistryKey></PREMIS:formatRegistryKey>
+                    <PREMIS:formatRegistryName>JPEG File Interchange Format</PREMIS:formatRegistryName>
+                    <PREMIS:formatRegistryKey>fmt/44</PREMIS:formatRegistryKey>
                 </PREMIS:formatRegistry>
             </PREMIS:format>
         </PREMIS:objectCharacteristics>
@@ -111,6 +111,10 @@
             <PREMIS:objectIdentifierType>Device: Serial number</PREMIS:objectIdentifierType>
             <PREMIS:objectIdentifierValue>MacBook Pro: C02ZK336LVDL</PREMIS:objectIdentifierValue>
         </PREMIS:objectIdentifier>
+        <PREMIS:significantProperties>
+            <PREMIS:significantPropertiesType>processor</PREMIS:significantPropertiesType>
+            <PREMIS:significantPropertiesValue>Intel Core i5</PREMIS:significantPropertiesValue>
+        </PREMIS:significantProperties>
         <PREMIS:environmentFunction>
             <PREMIS:environmentFunctionType>hardware</PREMIS:environmentFunctionType>
             <PREMIS:environmentFunctionLevel>1</PREMIS:environmentFunctionLevel>
@@ -123,6 +127,10 @@
             <PREMIS:objectIdentifierType>Software: Version number</PREMIS:objectIdentifierType>
             <PREMIS:objectIdentifierValue>macOS Mojave: 10.14.6</PREMIS:objectIdentifierValue>
         </PREMIS:objectIdentifier>
+        <PREMIS:significantProperties>
+            <PREMIS:significantPropertiesType>Kernel type</PREMIS:significantPropertiesType>
+            <PREMIS:significantPropertiesValue>Hybrid (XNU)</PREMIS:significantPropertiesValue>
+        </PREMIS:significantProperties>
         <PREMIS:environmentFunction>
             <PREMIS:environmentFunctionType>software</PREMIS:environmentFunctionType>
             <PREMIS:environmentFunctionLevel>1</PREMIS:environmentFunctionLevel>
@@ -130,7 +138,7 @@
         <PREMIS:environmentFunction>
             <PREMIS:environmentFunctionType>operating system</PREMIS:environmentFunctionType>
             <PREMIS:environmentFunctionLevel>2</PREMIS:environmentFunctionLevel>
-        </PREMIS:environmentFunction>
+        </PREMIS:environmentFunction> 
      
 <!-- Relationship to the hardware needed to run the operating system -->
         <PREMIS:relationship>
@@ -155,6 +163,10 @@
             <PREMIS:objectIdentifierType>Software: Version number</PREMIS:objectIdentifierType>
             <PREMIS:objectIdentifierValue>Preview: 10.1 (944.6.16.1)</PREMIS:objectIdentifierValue>
         </PREMIS:objectIdentifier>
+        <PREMIS:significantProperties>
+            <PREMIS:significantPropertiesType>behavior</PREMIS:significantPropertiesType>
+            <PREMIS:significantPropertiesValue>enables viewing</PREMIS:significantPropertiesValue>
+        </PREMIS:significantProperties>
         <PREMIS:environmentFunction>
             <PREMIS:environmentFunctionType>software</PREMIS:environmentFunctionType>
             <PREMIS:environmentFunctionLevel>1</PREMIS:environmentFunctionLevel>
@@ -189,12 +201,18 @@
         </PREMIS:objectIdentifier>
         
         <PREMIS:significantProperties>
-            <PREMIS:significantPropertiesType></PREMIS:significantPropertiesType>
-            <PREMIS:significantPropertiesValue></PREMIS:significantPropertiesValue>
+            <PREMIS:significantPropertiesType>encoding</PREMIS:significantPropertiesType>
+            <PREMIS:significantPropertiesValue>ASCII</PREMIS:significantPropertiesValue>
         </PREMIS:significantProperties>
         
         <PREMIS:objectCharacteristics>
-            <PREMIS:format></PREMIS:format>
+            <PREMIS:compositionLevel>0</PREMIS:compositionLevel>
+            <PREMIS:size>90</PREMIS:size>
+            <PREMIS:format>
+                <PREMIS:formatDesignation>
+                    <PREMIS:formatName>x-fmt/111</PREMIS:formatName>
+                </PREMIS:formatDesignation>
+            </PREMIS:format>            
         </PREMIS:objectCharacteristics>
     </PREMIS:object>    
     
@@ -205,9 +223,16 @@
             <PREMIS:eventIdentifierValue>Event Creation Digital Image</PREMIS:eventIdentifierValue>
         </PREMIS:eventIdentifier>
         <PREMIS:eventType>creation</PREMIS:eventType>
-        <PREMIS:eventDateTime>20110607T0846</PREMIS:eventDateTime>
+        <PREMIS:eventDateTime>2011-06-07T08:46</PREMIS:eventDateTime>
+        <PREMIS:eventDetailInformation>
+            <PREMIS:eventDetail>Photograph was taken of Mona Lisa at the Louvre Museum in Paris.</PREMIS:eventDetail>
+        </PREMIS:eventDetailInformation>
+        <PREMIS:eventOutcomeInformation>
+            <PREMIS:eventOutcome>00</PREMIS:eventOutcome>
+        </PREMIS:eventOutcomeInformation>
         
-<!-- Do not need outcome information, understood that the image exists-->
+        
+        <!-- Do not need outcome information, understood that the image exists-->
  
  <!-- Link to rights holder -->
         <PREMIS:linkingAgentIdentifier>
@@ -215,6 +240,7 @@
             <PREMIS:linkingAgentIdentifierValue>Dcoetzee</PREMIS:linkingAgentIdentifierValue>
             <PREMIS:linkingAgentRole>Creator</PREMIS:linkingAgentRole>
         </PREMIS:linkingAgentIdentifier>  
+        
         
 <!-- link to digital image -->
         <PREMIS:linkingObjectIdentifier>
@@ -232,6 +258,12 @@
         </PREMIS:eventIdentifier>
         <PREMIS:eventType>Creation</PREMIS:eventType>
         <PREMIS:eventDateTime>2020-11-10T22:57:00+0000</PREMIS:eventDateTime>
+        <PREMIS:eventDetailInformation>
+            <PREMIS:eventDetail>Checksum generated using the shasum CLI in a bash terminal environment.</PREMIS:eventDetail>
+        </PREMIS:eventDetailInformation>
+        <PREMIS:eventOutcomeInformation>
+            <PREMIS:eventOutcome>00</PREMIS:eventOutcome>
+        </PREMIS:eventOutcomeInformation>
         
 <!-- Link to checksum agent -->
         <PREMIS:linkingAgentIdentifier>
@@ -255,6 +287,12 @@
         </PREMIS:eventIdentifier>
         <PREMIS:eventType>Creation</PREMIS:eventType>
         <PREMIS:eventDateTime>1503</PREMIS:eventDateTime>
+        <PREMIS:eventDetailInformation>
+            <PREMIS:eventDetail>The painting was started by Da Vinci in 1503.</PREMIS:eventDetail>
+        </PREMIS:eventDetailInformation>
+        <PREMIS:eventOutcomeInformation>
+            <PREMIS:eventOutcome>00</PREMIS:eventOutcome>
+        </PREMIS:eventOutcomeInformation>
  
 <!-- link to the creator -->
         <PREMIS:linkingAgentIdentifier>
@@ -264,7 +302,7 @@
         
 <!-- link to the painting -->
         <PREMIS:linkingObjectIdentifier>
-            <PREMIS:linkingObjectIdentifierType></PREMIS:linkingObjectIdentifierType>
+            <PREMIS:linkingObjectIdentifierType>local</PREMIS:linkingObjectIdentifierType>
             <PREMIS:linkingObjectIdentifierValue>INV.779</PREMIS:linkingObjectIdentifierValue>
         </PREMIS:linkingObjectIdentifier>
     </PREMIS:event>
@@ -277,6 +315,7 @@
         </PREMIS:agentIdentifier>
         <PREMIS:agentName>shasum</PREMIS:agentName>
         <PREMIS:agentVersion>5.84</PREMIS:agentVersion>
+        <PREMIS:agentNote>Uses perl v5.18.4</PREMIS:agentNote>
 
 <!-- link to checksum creation event -->
         <PREMIS:linkingEventIdentifier>
@@ -300,6 +339,7 @@
         </PREMIS:agentIdentifier>
         <PREMIS:agentName>Dcoetzee</PREMIS:agentName>
         <PREMIS:agentType>person</PREMIS:agentType>
+        <PREMIS:agentNote>https://commons.wikimedia.org/wiki/User:Dcoetzee</PREMIS:agentNote>
 
 <!-- link to creation event -->
         <PREMIS:linkingEventIdentifier>
@@ -322,6 +362,7 @@
         </PREMIS:agentIdentifier>
         <PREMIS:agentName>Leonardo, da Vinci, 1452-1519</PREMIS:agentName>
         <PREMIS:agentType>person</PREMIS:agentType>
+        <PREMIS:agentNote>Leonardo da Vinci was an Italian polymath of the High Renaissance who is widely considered one of the greatest painters of all time. The Mona Lisa is the most famous of his works and the most famous portrait ever made. The Last Supper is the most reproduced religious painting of all time and his Vitruvian Man drawing is also regarded as a cultural icon. He is also known for his notebooks, in which he made drawings and notes on science and invention; these involve a variety of subjects including anatomy, cartography, painting, and palaeontology. Leonardo's collective works compose a contribution to later generations of artists rivalled only by that of his contemporary Michelangelo.</PREMIS:agentNote>
  
 <!-- link to creation event -->
         <PREMIS:linkingEventIdentifier>
